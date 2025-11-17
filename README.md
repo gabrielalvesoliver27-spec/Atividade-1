@@ -1,39 +1,46 @@
-Projeto Website - ONG Corrente do Bem
-Este repositório contém o código-fonte de um site estático para uma organização não governamental fictícia, a "ONG Corrente do Bem". O projeto foi desenvolvido como um exercício prático de desenvolvimento front-end, focando em HTML semântico e manipulação de formulários com JavaScript.
+# ONG Corrente do Bem - Atividade 1
 
-📖 Sobre o Projeto
-O site serve como um portal para a ONG, apresentando sua missão, os projetos que desenvolve e um formulário para captar voluntários e doações.
+Este projeto é um site estático de 3 páginas para uma ONG fictícia, a "Corrente do Bem". Foi desenvolvido como um exercício focado em **HTML5 semântico** e **JavaScript puro (inline)** para interatividade em formulários.
 
-🚀 Páginas e Funcionalidades
-O projeto é composto por três páginas principais:
+## 🚀 Link de Visualização (Deploy)
 
-index.html (Página Inicial)
+O site foi publicado usando o GitHub Pages e pode ser acessado no link abaixo:
 
-Apresenta a missão da ONG ("Transformando Vidas, Construindo Futuros").
+https://gabrielalvesoliver27-spec.github.io/Atividade-4/
 
-Inclui uma seção "Sobre Nós" e "Junte-se a Nós".
+---
 
-Exibe informações de contato, como endereço, telefone e e-mail.
+## 📖 Páginas do Projeto
 
-Projetos.html (Página de Projetos)
+O site é composto por 3 páginas HTML:
 
-Detalha as iniciativas da ONG, como "Educação para Todos", "Cozinha Comunitária" e "Capacitação Profissional".
+1.  **`index.html` (Página Inicial)**
+    * Apresenta a ONG, sua missão e informações de contato.
+    * Contém links de navegação para as outras seções.
 
-Explica como se tornar um voluntário e como realizar doações (incluindo PIX e outros métodos).
+2.  **`projetos.html` (Página de Projetos)**
+    * Detalha as iniciativas da ONG (Educação, Cozinha Comunitária, Capacitação).
+    * Explica as formas de ajuda, como voluntariado e doação.
 
-Contém links diretos para a página de cadastro.
+3.  **`cadastro.html` (Página de Cadastro)**
+    * Contém um formulário unificado para voluntários e doadores.
+    * O formulário é organizado com `<fieldset>` e `<legend>` para "Dados Pessoais", "Endereço" e "Interesse".
 
-cadastro.html (Página de Cadastro)
+---
 
-Um formulário unificado para que os usuários possam se cadastrar como voluntários ou para realizar doações.
+## 🛠️ Destaques Técnicos
 
-O formulário é dividido em seções: Dados Pessoais, Endereço e Interesse.
+O principal recurso técnico deste projeto está na página `cadastro.html`:
 
-Funcionalidade chave: Utiliza JavaScript puro para aplicar máscaras de formatação em tempo real nos campos de CPF, Telefone e CEP, melhorando a experiência do usuário.
+* **Validação HTML5 Nativa:** Utiliza atributos como `required`, `pattern`, `maxlength` e `type="email"` para validação de dados diretamente pelo navegador.
+* **Máscaras de Formulário (JavaScript):** Utiliza **JavaScript inline** (dentro da tag `<script>`) para aplicar máscaras de formatação em tempo real (enquanto o usuário digita) para os campos:
+    * CPF (`000.000.000-00`)
+    * Telefone (`(00) 00000-0000`)
+    * CEP (`00000-000`)
 
-🛠️ Tecnologias Utilizadas
-HTML5: Utilizado para a estruturação semântica de todo o conteúdo do site.
+## 💻 Como Visualizar Localmente
 
-JavaScript (Vanilla): Usado no arquivo cadastro.html para criar as máscaras de input e validações de formulário.
+Não é necessário nenhum servidor ou instalação.
 
-PHP (Planejado): O formulário de cadastro aponta para um submit_form.php, indicando a intenção de um backend em PHP para processar os dados (backend não incluído neste repositório).
+1.  Clone este repositório para sua máquina.
+2.  Abra o arquivo `index.html` diretamente no seu navegador.
