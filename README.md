@@ -38,9 +38,5 @@ O principal recurso técnico deste projeto está na página `cadastro.html`:
     * Telefone (`(00) 00000-0000`)
     * CEP (`00000-000`)
 
-## 💻 Como Visualizar Localmente
 
-Não é necessário nenhum servidor ou instalação.
 
-1.  Clone este repositório para sua máquina.
-2.  Abra o arquivo `index.html` diretamente no seu navegador.
